@@ -1,0 +1,90 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --white: #ffffff;
+    --color-primary: #49243E;
+    --color-secondary: #e2bab2;
+    --color-chocolate: #470c02;
+    --color-olivegreen: #6f633e;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    line-height: 2.2;
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+
+i {
+    font-size: 3rem;
+    color: var(--color-secondary);
+}
+
+nav {
+    background: var(--color-chocolate);
+    box-shadow: 0 5px 15px var(--color-olivegreen);
+}
+
+.nav-main {
+    max-width: 95%;
+    margin: 0 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu a {
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    transition: all 0.3s linear;
+}
+
+.menu a:hover {
+    font-weight: bolder;
+    background: var(--color-secondary);
+    color: var(--color-chocolate);
+}
+
+.welcome-msg {
+    display: flex;
+    justify-content: center;
+}
